@@ -4,15 +4,16 @@
   "description": "Boilerplate for express-react projects",
   "main": "index.js",
   "scripts": {
-    "server" : "nodemon index.js",
-    "client" : "npm run start --prefix client",
-    "dev" :"concurrently",
-    "install" : "npm install && npm install --prefix client"
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-project": "npm install && npm install --prefix client"
   },
   "author": "Haydn Morris",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "concurrently": "^3.6.0",
     "express": "^4.16.3"
   }
 }

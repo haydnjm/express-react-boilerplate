@@ -8,9 +8,9 @@ const {
 
 const app = express();
 
-app.use(bodyParser);
+app.use(bodyParser.json());
 
-require('./routes')(app);
+require('./routes/testRoutes')(app);
 
 if (NODE_ENV === 'production') {
   app.use(express.static('client/build'));
