@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-class App extends Component {
+class Root extends Component {
 
   state = {
     status: 'Loading',
@@ -23,4 +23,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Root;
